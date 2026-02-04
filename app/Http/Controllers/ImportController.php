@@ -54,26 +54,37 @@ class ImportController extends Controller
             ], 400);
         }
 
-        // Import data
-        $importer = new DeckImporter();
-        $result = $importer->import($data, $importType, $filename);
+        try {
+            // Import data
+            $importer = new DeckImporter();
+            $result = $importer->import($data, $importType, $filename);
 
-        if (!$result['success']) {
+            if (!$result['success']) {
+                return response()->json([
+                    'success' => false,
+                    'errors' => [$result['error'] ?? 'Erro desconhecido durante a importação.'],
+                ], 400);
+            }
+
+            return response()->json([
+                'success' => true,
+                'board_name' => $result['board_name'],
+                'cards_created' => $result['cards_created'],
+                'cards_updated' => $result['cards_updated'],
+                'cards_skipped' => $result['cards_skipped'],
+                'labels_processed' => $result['labels_processed'],
+                'users_processed' => $result['users_processed'],
+            ]);
+        } catch (\Exception $e) {
+            \Log::error('Import error: ' . $e->getMessage(), [
+                'trace' => $e->getTraceAsString(),
+            ]);
+
             return response()->json([
                 'success' => false,
-                'errors' => [$result['error'] ?? 'Erro desconhecido durante a importação.'],
-            ], 400);
+                'errors' => ['Erro: ' . $e->getMessage()],
+            ], 500);
         }
-
-        return response()->json([
-            'success' => true,
-            'board_name' => $result['board_name'],
-            'cards_created' => $result['cards_created'],
-            'cards_updated' => $result['cards_updated'],
-            'cards_skipped' => $result['cards_skipped'],
-            'labels_processed' => $result['labels_processed'],
-            'users_processed' => $result['users_processed'],
-        ]);
     }
 
     /**

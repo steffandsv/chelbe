@@ -181,9 +181,7 @@ class DeckImporter
         $isUpdate = $existingCard !== null;
         
         // Extract date from title/description
-        $title = $cardData['title'] ?? '';
-        $description = $cardData['description'] ?? '';
-        $extractedDate = $this->dateExtractor->extract($title, $description, $cardData['duedate'] ?? null);
+        $extractedDate = $this->dateExtractor->extract($cardData);
         
         // Parse duedate
         $dueDate = null;
@@ -224,8 +222,8 @@ class DeckImporter
         $attributes = [
             'deck_board_id' => $deckBoardId,
             'deck_stack_id' => $deckStackId,
-            'title' => $title,
-            'description' => $description,
+            'title' => $cardData['title'] ?? '',
+            'description' => $cardData['description'] ?? '',
             'board_name' => $this->boardName,
             'list_name' => $stackTitle,
             'stack_name' => $stackTitle,
