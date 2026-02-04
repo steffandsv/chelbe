@@ -220,12 +220,14 @@ class DeckImporter
         
         // Build attributes
         $attributes = [
+            'trello_id' => (string) $deckCardId, // Required field, use deck_card_id
             'deck_board_id' => $deckBoardId,
             'deck_stack_id' => $deckStackId,
             'title' => $cardData['title'] ?? '',
             'description' => $cardData['description'] ?? '',
             'board_name' => $this->boardName,
             'list_name' => $stackTitle,
+            'analyst' => $ownerDisplayname, // Set analyst from owner
             'stack_name' => $stackTitle,
             'owner_uid' => $ownerUid,
             'owner_displayname' => $ownerDisplayname,
