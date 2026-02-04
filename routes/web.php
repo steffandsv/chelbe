@@ -15,8 +15,8 @@ Route::get('/', [DashboardController::class , 'index'])->name('dashboard');
 // Risk Analytics
 Route::get('/dashboard/analise-derrotas', [AnalyticsController::class , 'index'])->name('analytics.index');
 Route::post('/dashboard/analise-derrotas', [AnalyticsController::class , 'analyze'])->name('analytics.analyze');
-// Old route kept for compatibility but redirecting or replaced
-Route::get('/analytics', [AnalyticsController::class , 'index']);
+// Analytics - com nome 'analytics' para compatibilidade com a sidebar
+Route::get('/analytics', [AnalyticsController::class , 'index'])->name('analytics');
 
 // Cards
 Route::get('/cards', [CardController::class , 'index'])->name('cards.index');
