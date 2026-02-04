@@ -1,10 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    
-    # IMPORTANTE: Para subdiretório em hospedagem compartilhada
-    # Se estiver na raiz do domínio, use: RewriteBase /
-    # Se estiver em subdiretório, use: RewriteBase /nome-do-diretorio/
-    RewriteBase /chelbe/
+    RewriteBase /
     
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -21,10 +17,10 @@
     RewriteRule ^artisan$ - [F,L]
 
     # Servir arquivos estáticos da pasta public (CSS, JS, imagens, etc)
-    RewriteCond %{REQUEST_URI} ^/chelbe/(css|js|images|fonts|build|favicon\.ico|robots\.txt)
-    RewriteCond %{DOCUMENT_ROOT}/chelbe/public/$1 -f [OR]
-    RewriteCond %{DOCUMENT_ROOT}/chelbe/public/$1 -d
-    RewriteRule ^(css|js|images|fonts|build|favicon\.ico|robots\.txt)(.*)$ public/$1$2 [L]
+    RewriteCond %{REQUEST_URI} ^/(css|js|images|fonts|build|favicon\.ico|robots\.txt)
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+    RewriteRule ^(.*)$ public/$1 [L]
 
     # Todas as outras requisições vão para o front controller
     RewriteCond %{REQUEST_FILENAME} !-f
