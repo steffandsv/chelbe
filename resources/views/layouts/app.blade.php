@@ -14,10 +14,9 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    <!-- CSS Inline (sem dependência do Vite/npm) -->
     <style>
-        @include('partials.styles')
+        {!! file_get_contents(resource_path('css/app.css')) !!}
     </style>
 </head>
 
