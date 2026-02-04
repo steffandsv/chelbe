@@ -1,0 +1,896 @@
+{
+  "boards": [
+    {
+      "id": 98,
+      "title": "3. ⚖️ Painel de Licitações",
+      "owner": "valdircardoso",
+      "color": "FF0000",
+      "archived": false,
+      "labels": [
+        {
+          "id": 1031,
+          "title": "Envio de documento",
+          "color": "F1DB50",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1032,
+          "title": "Aguardando contrato",
+          "color": "056B6B",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1033,
+          "title": "FASE DE RECURSO ",
+          "color": "7C31CC",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1034,
+          "title": "Aguardando Atualizações",
+          "color": "04FF17",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1035,
+          "title": "ANALISE DE CATÁLOGOS",
+          "color": "0082c9",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1036,
+          "title": "Contrarrazão até 29/09",
+          "color": "802007",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1037,
+          "title": "Contrarrazão até 02/10",
+          "color": "46863b",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1038,
+          "title": "Itens ganhos",
+          "color": "b35381",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1039,
+          "title": "Habilitado",
+          "color": "fe69f9",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1040,
+          "title": "Fiorilli",
+          "color": "db1d18",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1041,
+          "title": "⚙️ Média",
+          "color": "363636",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1042,
+          "title": "💰Médio",
+          "color": "1F6F4E",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1043,
+          "title": "🏆Alta",
+          "color": "F1DB50",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1044,
+          "title": "LicitarDigital",
+          "color": "DB1D18",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1045,
+          "title": "💰Alto",
+          "color": "1F6F4E",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1046,
+          "title": "enviar amostra",
+          "color": "33aab3",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1047,
+          "title": "Invalidez por inexequibilidade",
+          "color": "d1f9fc",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1048,
+          "title": "⚙️ Alta",
+          "color": "363636",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1049,
+          "title": "🏆Média",
+          "color": "F1DB50",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1050,
+          "title": "Chance em alguns itens",
+          "color": "dcf8ac",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1051,
+          "title": "Licitanet",
+          "color": "C01313",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1052,
+          "title": "BLL",
+          "color": "DB1D18",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1053,
+          "title": "⚗️ Laboratório",
+          "color": "DFDFDF",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1054,
+          "title": "🏆Baixa",
+          "color": "F1DB50",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1055,
+          "title": "⚙️ Baixa",
+          "color": "363636",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1056,
+          "title": "LicitaMais",
+          "color": "DB1D18",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1057,
+          "title": "🥇Licitação Ouro",
+          "color": "D4AF37",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1058,
+          "title": "🥈Licitação Prata",
+          "color": "C0C0C0",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1059,
+          "title": "Conferida",
+          "color": "38cb39",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1060,
+          "title": "PERDIDA - MOVER",
+          "color": "bf45e9",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1061,
+          "title": "💰Baixo",
+          "color": "1F6F4E",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1062,
+          "title": "🥉Licitação Bronze",
+          "color": "DB9370",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1063,
+          "title": "ATENÇÃO A DOCUMENTAÇÃO",
+          "color": "DB1D18",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1064,
+          "title": "⚙️ Baixíssima",
+          "color": "363636",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1065,
+          "title": "Por Lote",
+          "color": "C5250A",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1066,
+          "title": "Chave de acesso",
+          "color": "688d13",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1067,
+          "title": "Mover para Acompanhamento",
+          "color": "2d73be",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1071,
+          "title": "Licitação Revogada",
+          "color": "6566d9",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        },
+        {
+          "id": 1075,
+          "title": "Dispensa de Licitação",
+          "color": "31CC7C",
+          "boardId": 98,
+          "cardId": null,
+          "lastModified": 0,
+          "ETag": "cfcd208495d565ef66e7dff9f98764da"
+        }
+      ],
+      "acl": [
+        {
+          "id": 191,
+          "participant": "lialopes",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": true,
+          "permissionManage": true,
+          "owner": false
+        },
+        {
+          "id": 192,
+          "participant": "luvernillo",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": false,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 193,
+          "participant": "Licitaçoes",
+          "type": 1,
+          "boardId": 98,
+          "permissionEdit": false,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 194,
+          "participant": "samuelduarte",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 195,
+          "participant": "guilherme",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 185,
+          "participant": "leonardosavan",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 186,
+          "participant": "netofrederico",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": false,
+          "permissionManage": false,
+          "owner": false
+        },
+        {
+          "id": 187,
+          "participant": "juliocesarpangardi",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": true,
+          "permissionManage": true,
+          "owner": false
+        },
+        {
+          "id": 188,
+          "participant": "valdircardoso",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": true,
+          "permissionManage": true,
+          "owner": false
+        },
+        {
+          "id": 189,
+          "participant": "daniellopes",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": true,
+          "permissionManage": true,
+          "owner": false
+        },
+        {
+          "id": 190,
+          "participant": "admin",
+          "type": 0,
+          "boardId": 98,
+          "permissionEdit": true,
+          "permissionShare": true,
+          "permissionManage": true,
+          "owner": false
+        }
+      ],
+      "permissions": [],
+      "users": [],
+      "stacks": {
+        "354": {
+          "id": 354,
+          "title": "⚔ Disputas de Hoje",
+          "boardId": 98,
+          "deletedAt": 0,
+          "lastModified": 1770174781,
+          "cards": [
+            {
+              "id": 2416,
+              "title": "Mata Verde/MG - eqp. eletrônicos  (04/02/2026)",
+              "description": "Análise Estratégica de Licitação | PE 003/2026 | Mata Verde/MG\n\n📊 RESUMO DA OPORTUNIDADE\n\n<https://app2.licitardigital.com.br/pesquisa/89077>\n\n* **Modalidade:** Pregão Eletrônico (Lei 14.133/2021)\n* **Objeto:** Aquisição de mobiliário e equipamentos eletrônicos para rede pública (Programa Fortalecimento das Escolas Municipais).\n* **Valor Estimado Total:** R$ 101.323,00\n* **Critério:** Menor Preço por Item\n* **Data da Sessão:** 04/02/2026 às 09:00\n* **Portal:** Licitar Digital (<https://www.licitardigital.com.br>)\n* **Exclusividade:** Sim, Exclusivo para ME/EPP.\n\n📐 IPM v3.0 – Índice de Potencial de Mercado\n\n| Fator Estratégico    | Peso | Nota | Pontuação Ponderada | Justificativa                                                                                                                                                                 |\n|:---------------------|:-----|:-----|:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| **Tamanho da Cidade**    | 2.5  | 10   | 25.0                | Município de pequeno porte (Mata Verde/MG), localizado no Vale do Jequitinhonha, divisa com BA. Local remoto, longe de grandes centros (>100km). Baixíssima competição local. |\n| **Tamanho do Portal**    | 2.5  | 8    | 20.0                | Licitar Digital. Portal regional, menos visado que o [Compras.gov](http://Compras.gov), favorecendo a Mabus.                                                                                        |\n| **Itens Carro-Chefe**    | 1.5  | 0    | 0.0                 | O edital é focado em Eletrônicos (TI/TV) e Mobiliário. Não há Eletrodomésticos (linha branca), Cozinha ou EPIs.                                                               |\n| **Barreiras de Entrada** | 1.0  | 7    | 7.0                 | Exclusividade ME/EPP. Exige atestado de capacidade técnica pertinente.                                                                                                        |\n| **Valor Agregado**       | 1.0  | 6    | 6.0                 | Total de R$ 101k. Valor médio, atraente para ME sem atrair grandes tubarões.                                                                                                  |\n| **Quantidade de Itens**  | 0.5  | 2    | 1.0                 | Apenas 10 itens no total. Volume baixo.                                                                                                                                       |\n| **Mix de Itens**         | 0.5  | 5    | 2.5                 | Mix razoável: Eletrônicos (TV, PC, Impressora) e Mobiliário (Aço e Madeira).                                                                                                  |\n| **Histórico na Cidade**  | 0.5  | 0    | 0.0                 | Primeiro contato.                                                                                                                                                             |\n\n**IPM FINAL: 61.5 / 100**\n**Classificação:** 🟢 **Campo Promissor** (Boas condições de mercado, chance sólida de sucesso).\n\n⚠️ PONTOS DE ATENÇÃO CRÍTICOS\n\n1. **Prazo de Entrega Agressivo:** Apenas **08 (oito) dias úteis** após a solicitação (Item 3.3.1 do TR). Para Mata Verde/MG (local remoto), isso exige logística dropshipping muito alinhada ou fornecedor em MG.\n2. **Montagem de Móveis:** O item 2.5 do TR menciona \"fornecimento, montagem (quando houver)\". Isso é um risco altíssimo para dropshipping nos itens de mobiliário (Mesas e Armários), pois exigiria contratar montador local.\n3. **Erro na Especificação do Item 10:** O edital pede \"Computador... Processador Intel Core i7 de **3ª geração**\". A 3ª geração é de 2012 (obsoleta). Provável erro de \"copia e cola\" da Prefeitura. Cotar máquina atual (12ª/13ª gen) tornará o preço inviável contra quem cotar lixo eletrônico ou recondicionado. Item perigoso sem esclarecimento.\n4. **Logística Mobiliário:** Itens como Roupeiros de Aço e Mesas de Refeitório têm frete cubado altíssimo para o interior de MG, corroendo a margem do dropshipping.\n\n📁 ANÁLISE DOCUMENTAL\n\n* **Padrão Mabus:** \n  * Habilitação Jurídica, Fiscal e Trabalhista (Regularidade completa).\n  * Declarações de ME/EPP, Menor, Sustentabilidade (Anexo VI e V).\n* **Específicos:** \n  * **Qualificação Técnica:** Atestado de capacidade técnica para fornecimento de bens compatíveis (Item 7.4.1).\n  * **Proposta:** Deve conter Marca de todos os itens (Item 4.1.2). Validade de 60 dias.\n\n🎯 ITENS ESTRATÉGICOS\n\nA estratégia deve ser **Lances Parciais (Cherry Picking)**. Ignorar o mobiliário pesado e focar no que viaja fácil.\n\n* **Item 01 - Smart TV 50\" 4K (15 und):** Item de alto giro, fácil despacho via transportadora comum. Volume bom.\n* **Item 02 - Notebook 15.6\" i7/i5 12ª Gen (2 und):** Valor agregado alto, frete barato.\n* **Item 07 - Impressora Multifuncional Tanque de Tinta (2 und):** Item de prateleira (Epson Ecotank ou similar), fácil logística.\n* **Item 08 - Impressora Multifuncional Laser (1 und):** Item de prateleira (Brother/HP), fácil logística.\n* **Item 03 e 04 - Suportes de Projetor (14 und):** Itens de metal, mas pequenos. Baixo risco de avaria.\n* **EVITAR:** Itens 05, 06 e 09 (Mobiliário de Aço/Madeira) devido ao custo de frete para o interior de MG e risco de exigência de montagem.\n* **EVITAR:** Item 10 (Desktop) devido à especificação técnica absurda (3ª geração).\n\n📈 ANÁLISE DE VIABILIDADE E POTENCIAL FINANCEIRO\n\nConsiderando apenas os itens eletrônicos viáveis (1, 2, 7, 8):\n\n* **Item 1 (TV 50\"):** Estimado ~R$ 2.400,00 un. x 15 = R$ 36.000,00.\n* **Item 2 (Notebook):** Estimado ~R$ 3.500,00 un. x 2 = R$ 7.000,00.\n* **Item 7 (Impressora Tanque):** Estimado ~R$ 1.600,00 un. x 2 = R$ 3.200,00.\n* **Item 8 (Impressora Laser):** Estimado ~R$ 3.500,00 un. x 1 = R$ 3.500,00.\n\n**Potencial de Receita (Estimativa):** ~R$ 50.000,00 em itens eletrônicos \"limpos\".\n**Logística:** Dropshipping direto (Mercado Livre/Distribuidores) é viável para estes itens.\n\n⚙️ AVALIAÇÃO ESTRATÉGICA DETALHADA\n\n| Critério          | Status                                        | Comentário                                                                                     |\n|:------------------|:----------------------------------------------|:-----------------------------------------------------------------------------------------------|\n| **Viabilidade CNAE**  | ✅ Total                                       | Comércio varejista de equipamentos de informática, escritório e áudio/vídeo.                   |\n| **Complexidade**      | 🟡 Média                                      | O prazo de 8 dias é o gargalo. Exige fornecedor ágil.                                          |\n| **Lucratividade**     | 🟡 Média                                      | Margem em eletrônicos é apertada, mas o volume da TV (15 un) compensa.                         |\n| **Chance de Vitória** | 🟢 Média-Alta                                 | Portal regional + Cidade remota afastam grandes players de SP/Capital.                         |\n| **Risco Operacional** | 🔴 Alto (Mobiliário) / 🟡 Médio (Eletrônicos) | Se ganhar móveis, o risco de prejuízo com frete/montagem é real. Fique apenas nos eletrônicos. |\n\n💡 RECOMENDAÇÃO ESTRATÉGICA\n\n**PARTICIPAR PARCIALMENTE**\n\n1. **Foco Cirúrgico:** Cadastrar propostas **APENAS para os Itens 1, 2, 3, 4, 7 e 8**.\n2. **Ignorar Mobiliário:** Não cotar os itens 5, 6 e 9. O custo logístico para Mata Verde/MG inviabiliza o modelo dropshipping competitivo para aço/madeira, além da questão da montagem.\n3. **Pedido de Esclarecimento (Opcional mas recomendado):** Enviar e-mail questionando o Item 10: *\"A especificação pede processador de 3ª geração (ano 2012). A prefeitura aceita equipamentos novos de gerações atuais (12ª/13ª) ou busca especificamente equipamentos legados/usados?\"* Se aceitarem atuais sem subir o preço estimado, não vale a pena.\n4. **Atenção ao Prazo:** Antes de dar o lance, confirme estoque com fornecedor que despache rápido (ex: distribuidores de informática em MG ou SP com transportadora expressa), pois 8 dias úteis para o vale do Jequitinhonha é apertado.",
+              "descriptionPrev": null,
+              "stackId": 354,
+              "type": "plain",
+              "lastModified": 1770174781,
+              "lastEditor": null,
+              "createdAt": 1769436445,
+              "labels": [
+                {
+                  "id": 1041,
+                  "title": "⚙️ Média",
+                  "color": "363636",
+                  "boardId": 98,
+                  "cardId": 2416,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1042,
+                  "title": "💰Médio",
+                  "color": "1F6F4E",
+                  "boardId": 98,
+                  "cardId": 2416,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1044,
+                  "title": "LicitarDigital",
+                  "color": "DB1D18",
+                  "boardId": 98,
+                  "cardId": 2416,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1049,
+                  "title": "🏆Média",
+                  "color": "F1DB50",
+                  "boardId": 98,
+                  "cardId": 2416,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1058,
+                  "title": "🥈Licitação Prata",
+                  "color": "C0C0C0",
+                  "boardId": 98,
+                  "cardId": 2416,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                }
+              ],
+              "assignedUsers": [
+                {
+                  "id": 3695,
+                  "participant": {
+                    "primaryKey": "leonardosavan",
+                    "uid": "leonardosavan",
+                    "displayname": "Leonardo Savan",
+                    "type": 0
+                  },
+                  "cardId": 2416,
+                  "type": 0
+                }
+              ],
+              "attachments": null,
+              "attachmentCount": null,
+              "owner": {
+                "primaryKey": "leonardosavan",
+                "uid": "leonardosavan",
+                "displayname": "Leonardo Savan",
+                "type": 0
+              },
+              "order": 0,
+              "archived": false,
+              "done": null,
+              "duedate": "2026-02-04T12:00:00+00:00",
+              "notified": false,
+              "deletedAt": 0,
+              "commentsUnread": 0,
+              "commentsCount": 0,
+              "relatedStack": null,
+              "relatedBoard": null,
+              "ETag": "489d8db5808dbc484c8527db9b487443"
+            }
+          ],
+          "order": 3,
+          "ETag": "489d8db5808dbc484c8527db9b487443"
+        },
+        "355": {
+          "id": 355,
+          "title": "📋 Enviar Proposta/Docs",
+          "boardId": 98,
+          "deletedAt": 0,
+          "lastModified": 1770173342,
+          "cards": [
+            {
+              "id": 2471,
+              "title": "Boituva - equipamentos permanentes  (05/02/2026)",
+              "description": "Análise Estratégica de Licitação | PE 87/2025 | Boituva/SP\n\n<https://app2.licitardigital.com.br/pesquisa/86063>\n\n### 🚫 ITENS PROIBITIVOS (Risco Alto para Dropshipping)\n\nEstes itens exigem serviço manual no local (Boituva/SP). Se enviarmos direto do fornecedor, o fiscal recusará o recebimento pois chegarão em caixas/desmontados.\n\n- **ITEM 03 - Ar-Condicionado 12.000 BTUs**\n  - **Motivo:** O edital exige explicitamente a instalação.\n- **ITEM 04 - Ar-Condicionado 18.000 BTUs**\n  - **Motivo:** O edital exige explicitamente a instalação.\n- **ITEM 09 - Armário de Aço**\n  - **Motivo:** Exigência de entrega do produto já montado.\n- **ITEM 10 - Longarina (Cadeira)**\n  - **Motivo:** Exigência de entrega do produto já montado.\n- **ITEM 11 - Mesa de Escritório**\n  - **Motivo:** Exigência de entrega do produto já montado\n- **ITEM 13 - Estante de Aço**\n  - **Motivo:** Exigência de entrega do produto já montado.\n\n---\n\n### ⚠️ ITEM DE ATENÇÃO (Risco Médio/Técnico)\n\n- **ITEM 07 - Kit Painel de Senha**\n  - \n\n    **Motivo:** Embora não cite explicitamente \"instalação elétrica\" como os ar-condicionados, é um sistema composto (Painel + Impressora + Controles + Guichê Digital) que exige configuração para funcionarem juntos.\n  - **Risco:** Se o equipamento chegar e não estiver \"pareado\" ou configurado para os 10 guichês solicitados, a prefeitura pode alegar que não funciona. Apenas participe se o fornecedor entregar a solução \"Plug & Play\" (já configurada de fábrica).\n\n📊 RESUMO DA OPORTUNIDADE\n\n* **Modalidade:** Pregão Eletrônico\n* **Objeto:** Aquisição de equipamentos permanentes (Eletrodomésticos, Informática, Mobiliário, Jardinagem) para CRAS e CREAS.\n* **Valor Total Estimado:** R$ 176.658,19\n* **Critério:** Menor Preço por Item\n* **Data da Disputa:** 05/02/2026 às 09:05h\n* **Portal:** Licitar Digital ([Link](https://licitar.digital/))\n* **Restrição:** Exclusiva para ME/EPP.\n\n📐 IPM v3.0 – Índice de Potencial de Mercado\n\n| Fator        | Peso | Nota (0-10) | Pontuação Ponderada | Justificativa                                                                                |\n|:-------------|:----:|:-----------:|:-------------------:|:---------------------------------------------------------------------------------------------|\n| **Pcidade**      | 25%  |      6      |        15.0         | População ~63k hab. Próxima a Sorocaba (Centro Logístico). Tamanho médio/pequeno.            |\n| **Pportal**      | 25%  |      8      |        20.0         | Licitar Digital. Portal regional, menos concorrido que o [Compras.gov](http://Compras.gov).                        |\n| **Pcarroschefe** | 15%  |      8      |        12.0         | ~47% do valor em Eletrodomésticos (Ar, Geladeira, TV) e afins.                               |\n| **Pbarreiras**   | 10%  |      7      |         7.0         | Exclusividade ME/EPP + Exigência de Catálogo/Marca na proposta + Instalação em alguns itens. |\n| **Pvalor**       | 10%  |      8      |         8.0         | R$ 176k. Faixa ideal para ME, atrativa mas não chama \"tubarões\".                             |\n| **Pquantidade**  |  5%  |      2      |         1.0         | 15 Itens. Volume baixo.                                                                      |\n| **Pmix**         |  5%  |     10      |         5.0         | Mix excelente: Eletro, Móveis, TI, Jardinagem (5 categorias).                                |\n| **Phistorico**   |  5%  |      0      |         0.0         | Sem histórico de venda.                                                                      |\n| **TOTAL**        | **100%** |      **-**      |        **68.0**         | **CAMPO PROMISSOR**                                                                              |\n\n**Interpretação:** Cenário favorável. O portal regional e o mix de produtos afastam aventureiros. A exigência de instalação em alguns itens filtra dropshippers puros, criando oportunidade se focarmos nos itens de entrega simples.\n\n⚠️ PONTOS DE ATENÇÃO CRÍTICOS\n\n1. **Instalação Obrigatória:** Itens 3, 4 (Ar Condicionado) e 7 (Painel de Senha) exigem instalação. **Risco alto para Dropshipping**.\n2. **Mobiliário \"Montado\":** Itens 9, 10, 11 e 13 exigem entrega do móvel **MONTADO**. Isso inviabiliza o envio direto de fábrica/transportadora convencional sem um montador local.\n3. **Catálogos:** O Edital (item 4.1.4) diz \"poderá\", mas o Termo de Referência (item 8.3.2) diz **\"deverá apresentar catálogo contendo fotografias... marca e modelo\"** junto com a proposta. Prevalência do TR.\n4. **Marca/Modelo:** Obrigatório indicar na proposta (Item 4.1.3).\n5. **Exequibilidade:** Item 6.6 cita presunção de inexequibilidade abaixo de 50% do valor orçado.\n\n📁 ANÁLISE DOCUMENTAL\n\n* **Padrão Mabus:** Kit Documental Completo.\n* **Específicos:**\n  * **Catálogos Técnicos:** Obrigatórios no momento do envio da proposta para todos os itens.\n  * **Declaração de Sustentabilidade:** Verificar se há modelo específico, o TR cita normas ambientais (Item 12).\n\n🎯 ITENS ESTRATÉGICOS (Viáveis para Dropshipping)\n*Estes itens possuem apenas entrega, sem menção explícita de montagem complexa ou instalação elétrica no TR.*\n\n1. **Item 15 - Notebook (8 un):**\n   * *Valor Est:* R$ 5.646,73/un.\n   * *Spec:* i7 10ª Geração (ou sup), 16GB, 512GB SSD, Win 11 Pro.\n   * *Obs:* Preço estimado está excelente (acima do mercado varejo, margem alta). Item de alto valor agregado e frete fácil.\n2. **Item 08 - Smart TV 70\" (2 un):**\n   * *Valor Est:* R$ 4.291,82/un.\n   * *Obs:* Item de prateleira, fácil cotação.\n3. **Item 06 - Trituradora de Papel (2 un):**\n   * *Valor Est:* R$ 2.971,33/un.\n   * *Obs:* Niche item. Preço estimado muito alto (Trituradoras comuns custam R$ 600-1.200). Verificar se a spec P-3/30L justifica o valor (provavelmente margem absurda aqui).\n4. **Item 05 - Cortador de Grama Elétrico (3 un):**\n   * *Valor Est:* R$ 2.339,05/un.\n   * *Obs:* Niche item.\n5. **Item 02 - Aspirador de Pó (6 un):**\n   * *Valor Est:* R$ 833,67/un.\n   * *Obs:* Item simples, baixo risco.\n6. **Item 14 - Tenda Sanfonada 3x3 (6 un):**\n   * *Valor Est:* R$ 701,67/un.\n   * *Obs:* Item de fácil despacho.\n\n*Itens com Risco Médio (Avaliar):*\n\n* **Item 01 - Geladeira (6 un):** Risco de avaria no transporte, mas viável se tiver transportadora de confiança. Valor R$ 2.676,00 está justo.\n\n📈 ANÁLISE DE VIABILIDADE E POTENCIAL FINANCEIRO\n*(Considerando apenas os itens de Dropshipping Puro - 2, 5, 6, 8, 14, 15)*\n\n* **Valor Total Viável (Dropshipping):** ~R$ 77.000,00\n* **Destaque (Notebooks):** R$ 45.173,89 (Sozinho representa quase 60% do viável).\n* **Lucro Bruto Estimado:** Considerando o sobrepreço aparente nos Notebooks e Trituradora, estima-se margem bruta potencial de **30% a 40%**.\n\n⚙️ AVALIAÇÃO ESTRATÉGICA DETALHADA\n\n| Item/Lote        | Categoria  | Viabilidade | Complexidade | Lucratividade | Risco | Justificativa                                                          |\n|:-----------------|:-----------|:-----------:|:------------:|:-------------:|:-----:|:-----------------------------------------------------------------------|\n| **15 - Notebook**    | TI         |   ✅ ALTA    |    BAIXA     |     ALTA      | MÉDIO | Preço estimado muito bom. Frete fácil. Valor agregado alto.            |\n| **06 - Trituradora** | Escritório |   ✅ ALTA    |    BAIXA     |     ALTA      | BAIXO | Preço estimado de R$ 2.9k parece muito acima do mercado para spec P-3. |\n| **03, 04, 07**       | Eletro/TI  |   ❌ BAIXA   |     ALTA     |     MÉDIA     | ALTO  | Exigem instalação. Inviável para modelo dropshipping puro.             |\n| **09, 10, 11, 13**   | Móveis     |   ❌ BAIXA   |     ALTA     |     MÉDIA     | ALTO  | TR exige \"Entregue Montado\". Risco logístico alto.                     |\n| **08 - TV 70\"**      | Eletro     |   ✅ ALTA    |    MÉDIA     |     MÉDIA     | MÉDIO | Risco de quebra no transporte, mas item padrão.                        |\n| **14 - Tenda**       | Diversos   |   ✅ ALTA    |    BAIXA     |     MÉDIA     | BAIXO | Item simples, sem segredos técnicos.                                   |\n\n💡 RECOMENDAÇÃO ESTRATÉGICA\n\n**PARTICIPAR PARCIALMENTE (FOCO SELETIVO)**\n\n**Justificativa:** O edital tem \"pegadinhas\" logísticas (instalação e montagem) que afastam a concorrência genérica, mas penalizam o dropshipping puro nos lotes de Ar Condicionado e Móveis. No entanto, os itens de **Informática (Notebooks)** e **Equipamentos de Escritório (Trituradora)** estão com preços estimados excelentes e logística simples.\n\n**Ações Críticas:**\n\n1. **Cotação Agressiva (Notebooks):** Cotar Notebook i7 com fornecedores de TI parceiros. O valor de referência (R$ 5.6k) permite margem agressiva.\n2. **Verificar Spec da Trituradora:** Confirmar se existe modelo P-3 30L que custe menos de R$ 1.500 para garantir a margem absurda projetada.\n3. **Não cotar Ar Condicionado e Móveis:** A menos que exista parceiro local em Boituva para instalação/montagem, o risco de sanção por falha na execução é alto.\n4. **Catálogos Prontos:** Preparar dossiê com fotos/marcas dos itens viáveis antes da abertura, pois o sistema/pregoeiro vai exigir.",
+              "descriptionPrev": null,
+              "stackId": 355,
+              "type": "plain",
+              "lastModified": 1770122025,
+              "lastEditor": null,
+              "createdAt": 1769708742,
+              "labels": [
+                {
+                  "id": 1044,
+                  "title": "LicitarDigital",
+                  "color": "DB1D18",
+                  "boardId": 98,
+                  "cardId": 2471,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1045,
+                  "title": "💰Alto",
+                  "color": "1F6F4E",
+                  "boardId": 98,
+                  "cardId": 2471,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1049,
+                  "title": "🏆Média",
+                  "color": "F1DB50",
+                  "boardId": 98,
+                  "cardId": 2471,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1055,
+                  "title": "⚙️ Baixa",
+                  "color": "363636",
+                  "boardId": 98,
+                  "cardId": 2471,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1057,
+                  "title": "🥇Licitação Ouro",
+                  "color": "D4AF37",
+                  "boardId": 98,
+                  "cardId": 2471,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                }
+              ],
+              "assignedUsers": [
+                {
+                  "id": 3775,
+                  "participant": {
+                    "primaryKey": "hevertonmoreira",
+                    "uid": "hevertonmoreira",
+                    "displayname": "Heverton Moreira",
+                    "type": 0
+                  },
+                  "cardId": 2471,
+                  "type": 0
+                }
+              ],
+              "attachments": null,
+              "attachmentCount": null,
+              "owner": {
+                "primaryKey": "netofrederico",
+                "uid": "netofrederico",
+                "displayname": "Neto Frederico",
+                "type": 0
+              },
+              "order": 0,
+              "archived": false,
+              "done": null,
+              "duedate": "2026-02-05T12:05:00+00:00",
+              "notified": false,
+              "deletedAt": 0,
+              "commentsUnread": 0,
+              "commentsCount": 0,
+              "relatedStack": null,
+              "relatedBoard": null,
+              "ETag": "098153b2ce7a7f639118a04e22384b83"
+            }
+          ],
+          "order": 1,
+          "ETag": "386b48d0c08383b6823cacf9bb15d7dc"
+        },
+        "356": {
+          "id": 356,
+          "title": "📅 On hold",
+          "boardId": 98,
+          "deletedAt": 0,
+          "lastModified": 1770173336,
+          "cards": [
+            {
+              "id": 2453,
+              "title": "Alto Caparaó - equipamentos  (03/02/2026) ",
+              "description": "# Análise Estratégica de Licitação | Pregão 007/2026 | Alto Caparaó/MG\n\n<https://app2.licitardigital.com.br/pesquisa/88528>\n\n::: error\n itens que apresentam **baixa viabilidade** ou **risco elevado** para o seu modelo de operação:\n\n:::\n\n### 1. Itens de Manutenção e Reparo (Risco Técnico/Inviabilidade)\n\nDe acordo com a diretriz da Mabus, itens que envolvem serviços ou componentes de reposição técnica são desfavoráveis, pois podem induzir a prefeitura a exigir suporte ou instalação.\n\n- **Itens 57 e 58 (Telas LED Slim para Reparo):** São peças de reposição (\"30 pinos\" e \"40 pinos\") para conserto de notebooks. No modelo de *dropshipping*, a garantia de compatibilidade técnica exata e a chance de o cliente solicitar o serviço de troca tornam esses itens **totalmente ruins**.\n- **Itens 55 e 56 (Almofadas de Esponja/Feltro para Impressora):** Peças internas de manutenção para modelos específicos da Epson. São itens de baixíssimo valor unitário e altíssima especificidade, com risco de devolução por erro de modelo ou exigência de instalação física.\n\n### 2. Suprimentos com Exigência de \"Original\" (Risco de Margem/Autenticidade)\n\n- **Itens 68 a 73 (Tintas para Impressora Epson e HP):** O edital exige expressamente que sejam **\"Originais\"**.\n  - **Risco:** No *dropshipping* via marketplaces, é comum encontrar tintas similares vendidas como originais. O envio de uma tinta não original resultará em rejeição imediata do objeto pelo fiscal e possíveis sanções administrativas.\n  - **Margem:** Tintas originais têm margens muito estreitas e alta concorrência de distribuidores autorizados, o que pode não compensar o esforço operacional da Mabus.\n\n### 3. Itens que podem exigir Configuração/Instalação (Atenção Especial)\n\nEmbora o objeto seja \"aquisição\", os seguintes itens frequentemente geram chamados de \"suporte\" que o dropshipper não consegue atender presencialmente:\n\n- **Itens 10 e 24 (Roteadores):** Exigem configuração de rede.\n- **Item 50 (Impressora Multifuncional com FAX/ADF):** Equipamento robusto que pode demandar auxílio na instalação inicial.\n\n### 4. Itens com Logística Diferenciada\n\n- **Item 28 (Cabo de Rede - 1.000 metros):** Trata-se de fornecimento em grande metragem (provavelmente bobinas). Verifique se o seu fornecedor de *dropshipping* despacha bobinas de 1km ou se o frete para essa quantidade não inviabiliza a proposta, dado que o peso é considerável.\n\n📊 **RESUMO DA OPORTUNIDADE**\n\n- **Órgão:** Prefeitura Municipal de Alto Caparaó - MG\n- **Objeto:** Registro de Preços para aquisição de materiais, equipamentos e suprimentos de informática.\n- **Modalidade:** Pregão Eletrônico (Lei 14.133/2021)\n- **Valor Estimado:** SIGILOSO (Estratégico para evitar teto de preços)\n- **Critério de Julgamento:** Menor Preço por Item\n- **Data de Realização:** 03/02/2026 às 13:00h\n- **Portal:** AMM Licita ([www.ammlicita.org.br](http://www.ammlicita.org.br))\n\n📐 **IPM v3.0 – ÍNDICE DE POTENCIAL DE MERCADO**\n\n| Fator Estratégico    | Peso | Pontos | Resultado Ponderado | Justificativa                                                           |\n|:---------------------|:----:|:------:|:-------------------:|:------------------------------------------------------------------------|\n| Tamanho da Cidade    | 2.5  |   10   |        25.0         | População estimada < 20k hab. (Nicho Total).                            |\n| Tamanho do Portal    | 2.5  |   8    |        20.0         | AMM Licita é um portal regional/estadual.                               |\n| Itens Carro-Chefe    | 1.5  |   0    |         0.0         | Itens de informática não são considerados \"Carros-Chefe\" (EPI/Cozinha). |\n| Barreiras de Entrada | 1.0  |   7    |         7.0         | Exclusividade ME/EPP e exigência de catálogos/modelos.                  |\n| Valor Agregado       | 1.0  |   10   |        10.0         | Valor Sigiloso (Valor Oculto). Melhor cenário.                          |\n| Quantidade de Itens  | 0.5  |   2    |         1.0         | Tabela indica poucos itens iniciais (descritos no Termo de Referência). |\n| Mix de Itens         | 0.5  |   1    |         0.5         | Foco único em tecnologia/informática.                                   |\n| Histórico na Cidade  | 0.5  |   0    |         0.0         | Primeiro contato com o município.                                       |\n| **IPM FINAL**            |  \\-   |   \\-    |        **63.5**         | **CAMPO PROMISSOR**                                                         |\n\n**Interpretação:** O cenário é favorável devido ao baixo porte da cidade e ao sigilo do valor, o que tende a afastar grandes players que buscam volumes massivos e facilita a estratégia de margem da Mabus.\n\n⚠️ **PONTOS DE ATENÇÃO CRÍTICOS**\n\n1. **Orçamento Sigiloso:** Exige estudo de mercado prévio apurado, pois não há preço máximo de referência público no edital.\n2. **Prioridade Regional:** Empresas da Microrregião de Manhuaçu têm preferência de até 10% sobre o melhor lance.\n3. **Logística de Entrega:** Entrega gradativa e parcial em até 15 dias após ordem de fornecimento.\n4. **Garantia:** Exigência de indicação de prazo de garantia e modelo específico na proposta.\n\n📁 **ANÁLISE DOCUMENTAL**\n\n- **Kit Padrão Mabus:** Atende à maioria das exigências (Jurídica, Fiscal e Trabalhista).\n- **Documentos Específicos:** - Declaração para Cadastro de Reserva (Anexo IV), caso a Mabus fique em 2º lugar e aceite o preço do 1º. \n  - Inexistência de Balanço Patrimonial: Dispensado para ME/EPP no Simples Nacional neste edital.\n\n🎯 **ITENS ESTRATÉGICOS**\n\n- **Equipamentos com Especificação Detalhada:** Notebooks e computadores que permitam cotação de modelos específicos (Nicho).\n- **Suprimentos de Informática:** Toners e cartuchos (Logística simplificada via Dropshipping). *Nota: Itens que exijam instalação física complexa ou configuração presencial devem ser evitados.*\n\n📈 **ANÁLISE DE VIABILIDADE E POTENCIAL FINANCEIRO**\n\n- **Viabilidade de Itens:** Compatibilidade com CNAEs de comércio de equipamentos de informática.\n- **Sourcing:** Itens de fácil localização em distribuidores de Dropshipping (ex: notebooks, mouses, teclados, suprimentos).\n- **Referencial de Preços:** Comparando com o histórico da Mabus (PDF Análise), itens de tecnologia como Tablets e Notebooks costumam ter margens entre 15% e 20% em municípios de pequeno porte.\n\n⚙️ **AVALIAÇÃO ESTRATÉGICA DETALHADA**\n\n- **Viabilidade:** ALTA (CNAE compatível e modelo dropshipping aplicável).\n- **Complexidade:** MÉDIA (Exige cotação técnica precisa devido ao sigilo do valor).\n- **Lucratividade:** MÉDIA-ALTA (Cidades pequenas permitem lances menos agressivos).\n- **Chance de Vitória:** MÉDIA-ALTA (IPM 63.5).\n- **Risco Operacional:** BAIXO (Produtos comuns, entrega em sede administrativa).\n\n💡 **RECOMENDAÇÃO ESTRATÉGICA**\n**DECISÃO: PARTICIPAR (Foco Seletivo)**\n\n**Justificativa:** O IPM acima de 60 coloca esta licitação em uma zona de segurança para a Mabus. O fato de ser em Minas Gerais em uma cidade pequena reduz a \"invasão\" de grandes atacadistas de SP.\n\n**Ações Críticas:**\n\n1. Realizar busca de preços de mercado para os itens da planilha (Notebooks/Suprimentos) para compor lance base, já que o valor é sigiloso.\n2. Preparar proposta técnica com Marcas/Modelos claros para evitar desclassificação.\n3. Monitorar o chat do AMM Licita para convocações de negociação.",
+              "descriptionPrev": null,
+              "stackId": 356,
+              "type": "plain",
+              "lastModified": 1770173336,
+              "lastEditor": null,
+              "createdAt": 1769626558,
+              "labels": [
+                {
+                  "id": 1041,
+                  "title": "⚙️ Média",
+                  "color": "363636",
+                  "boardId": 98,
+                  "cardId": 2453,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1042,
+                  "title": "💰Médio",
+                  "color": "1F6F4E",
+                  "boardId": 98,
+                  "cardId": 2453,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1044,
+                  "title": "LicitarDigital",
+                  "color": "DB1D18",
+                  "boardId": 98,
+                  "cardId": 2453,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1049,
+                  "title": "🏆Média",
+                  "color": "F1DB50",
+                  "boardId": 98,
+                  "cardId": 2453,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1058,
+                  "title": "🥈Licitação Prata",
+                  "color": "C0C0C0",
+                  "boardId": 98,
+                  "cardId": 2453,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                }
+              ],
+              "assignedUsers": [
+                {
+                  "id": 3793,
+                  "participant": {
+                    "primaryKey": "netofrederico",
+                    "uid": "netofrederico",
+                    "displayname": "Neto Frederico",
+                    "type": 0
+                  },
+                  "cardId": 2453,
+                  "type": 0
+                }
+              ],
+              "attachments": null,
+              "attachmentCount": null,
+              "owner": {
+                "primaryKey": "netofrederico",
+                "uid": "netofrederico",
+                "displayname": "Neto Frederico",
+                "type": 0
+              },
+              "order": 1,
+              "archived": false,
+              "done": null,
+              "duedate": "2026-02-09T12:00:00+00:00",
+              "notified": false,
+              "deletedAt": 0,
+              "commentsUnread": 0,
+              "commentsCount": 0,
+              "relatedStack": null,
+              "relatedBoard": null,
+              "ETag": "f8e8f1d84d44a98c589df0539878a60e"
+            },
+            {
+              "id": 2451,
+              "title": "Porteirinha - equipamentos Adiada",
+              "description": "# Análise Estratégica de Licitação | 001/2026 | Porteirinha/MG\n\n<https://app2.licitardigital.com.br/pesquisa/88660>\n\n::: error\n**NÃO** devemos participar:\n\n:::\n\n### Itens de Mobiliário com Exigência de Montagem\n\nO edital é taxativo ao afirmar que os itens de mobiliário devem ser entregues **devidamente montados**, isentando o município de qualquer custo adicional. Como a Mabus opera majoritariamente via *dropshipping*, a entrega de móveis montados gera um entrave logístico e custo extra com mão de obra local em Porteirinha/MG.\n\n- **Itens Críticos:**\n  - **Item 04:** Armário de aço com 2 portas.\n  - **Item 07:** Armário para escritório em MDP.\n  - **Item 14:** Berço infantil em MDF.\n  - **Item 37:** Cômodas de 10 gavetas MDP.\n  - **Item 38:** Conjunto de mesas e bancos para refeitório (exige montagem de estrutura em aço e tampos).\n  - **Item 61:** Mesa de refeitório adulto com bancos separados.\n  - **Item 63:** Mesa para escritório com 3 gavetas.\n  - **Item 78:** Sapateira de 4 gavetas.\n\n### 2. Itens com Exigência de Instalação Técnica\n\nEmbora o edital foque na \"aquisição\", itens que podem demandar suporte técnico especializado ou instalação imediata para verificação de conformidade (recebimento provisório/definitivo) representam um risco operacional maior para o modelo de *dropshipping* puro.\n\n- **Itens a evitar ou avaliar com cautela:**\n  - **Itens 01, 02 e 03:** Ar condicionado Split (geralmente exige instalação por técnico credenciado para manter a garantia de 12 meses exigida).\n  - **Item 89:** Tenda 6x6m piramidal (montagem complexa de estrutura metálica e lona).\n  - **Item 98:** Vídeo Porteiro Sem Fio (exige configuração e teste de sinal no local).\n\n📊 RESUMO DA OPORTUNIDADE\n\n- Modalidade: Pregão Eletrônico para Registro de Preços (Lei 14.133/2021)\n- Objeto: Aquisição de eletrodomésticos, mobiliários e equipamentos diversos.\n- Valor Estimado: R$ 3.221.553,34 (Sigiloso na fase de lances).\n- Critério: Menor Preço por Item.\n- Data de Realização: 03/02/2026 às 09:00h.\n- Portal: Licitar Digital (<https://licitar.digital/>).\n\n📐 IPM v3.0 – ÍNDICE DE POTENCIAL DE MERCADO\n\n| Fator Estratégico       | Pontuação | Peso | Resultado | Justificativa                                                                           |\n|:------------------------|:---------:|:----:|:---------:|:----------------------------------------------------------------------------------------|\n| Pcidade (Tamanho)       |     8     | 2.5  |   20.0    | Porteirinha possui aprox. 37 mil hab. (IBGE), sem grandes centros adjacentes imediatos. |\n| Pportal (Visibilidade)  |     8     | 2.5  |   20.0    | Portal Licitar Digital é regional/estadual, menos concorrido que o [Compras.gov](http://Compras.gov).         |\n| Pcarroschefe (Sinergia) |    10     | 1.5  |   15.0    | Edital massivamente composto por eletros e itens de cozinha (foco total Mabus).         |\n| Pbarreiras (Entrada)    |     7     | 1.0  |    7.0    | Exige Atestado de Capacidade Técnica e envio de catálogos/fichas técnicas em 2h.        |\n| Pvalor (Atratividade)   |     0     | 1.0  |    0.0    | Valor total acima de R$ 3M atrai grandes players, apesar do sigilo inicial.             |\n| Pquantidade (Itens)     |     8     | 0.5  |    4.0    | 98 itens listados (volume ótimo).                                                       |\n| Pmix (Categorias)       |    10     | 0.5  |    5.0    | Mix ideal: Eletro, Cozinha, Móveis, Informática e EPI.                                  |\n| Phistorico (Cliente)    |     0     | 0.5  |    0.0    | Sem registro de vendas anteriores para este município.                                  |\n\nIPM Final: 71 pontos | Campo Promissor\nInterpretação: Boas condições de mercado e chance sólida de sucesso devido ao portal regional e mix de itens.\n\n⚠️ PONTOS DE ATENÇÃO CRÍTICOS\n\n- Catálogos/Fichas Técnicas: Devem ser enviados em apenas 2 horas após convocação do pregoeiro (Item 7.11.1).\n- Amostras: O edital prevê a exigência de amostras caso o Termo de Referência solicite (Item 7.7).\n- Montagem: Itens de mobiliário devem ser entregues montados (Item 5.1.2), o que encarece a logística local se não houver parceiro.\n- Sigilo: O orçamento é sigiloso (Item 1.2), exigindo cautela na formulação do preço para não ficar muito abaixo do mercado.\n\n📁 ANÁLISE DOCUMENTAL\n\n- Documentos Padrão: Kit ME/EPP Mabus completo.\n- Documentos Específicos: Atestado de Capacidade Técnica compatível (Item 8.1.4) e Fichas Técnicas/Catálogos dos fabricantes para os itens ofertados.\n\n🎯 ITENS ESTRATÉGICOS\n\n- Eletros (Itens 48-50, 74-76): Freezers e Geladeiras são o core business Mabus.\n- Cozinha (Itens 44-46, 54): Fogões e Liquidificadores industriais têm margem histórica positiva.\n- Nicho Técnico (Itens 88): Telas Interativas possuem especificações que limitam aventureiros.\n- Livros/Educacionais (Item 15): Brinquedoteca básica (logística simplificada).\n\n📈 ANÁLISE DE VIABILIDADE E POTENCIAL FINANCEIRO\n\n- Itens Viáveis: Aproximadamente 80% do edital (excluir mobiliário pesado que exige montagem complexa).\n- Valor Total Estratégico: Estima-se R$ 2.100.000,00 em itens de alto interesse.\n- Referência de Preço: Itens como Liquidificador Industrial (Item 54) e Geladeiras (Item 74) mostram percentuais reais de lucro entre 3% a 33% no histórico da empresa (Análise.pdf).\n- Modelo: Dropshipping viável para eletros; atenção ao frete para mobiliário em Registro de Preço.\n\n⚙️ AVALIAÇÃO ESTRATÉGICA DETALHADA\n\n- Viabilidade: ALTA (CNAEs compatíveis com 90% dos itens).\n- Complexidade: MÉDIA (Devido ao prazo curto para catálogos e exigência de montagem).\n- Lucratividade: MÉDIA-ALTA (Itens de valor agregado elevado).\n- Chance de Vitória: MÉDIA-ALTA (Fator Portal Regional ajuda).\n- Risco Operacional: MÉDIO (Multa de 2% ao dia por atraso na entrega).\n\n💡 RECOMENDAÇÃO ESTRATÉGICA\n\n- Decisão: PARTICIPAR (Foco Seletivo).\n- Estratégia: Priorizar Eletrodomésticos e Cozinha Industrial. Evitar mobiliário que exija montagem local, a menos que o custo de um montador em Porteirinha seja diluído no lote.\n- Ação Crítica: Organizar pastas de catálogos de todos os itens antes da sessão para cumprir o prazo de 2h.",
+              "descriptionPrev": null,
+              "stackId": 356,
+              "type": "plain",
+              "lastModified": 1770173336,
+              "lastEditor": null,
+              "createdAt": 1769610100,
+              "labels": [
+                {
+                  "id": 1041,
+                  "title": "⚙️ Média",
+                  "color": "363636",
+                  "boardId": 98,
+                  "cardId": 2451,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1042,
+                  "title": "💰Médio",
+                  "color": "1F6F4E",
+                  "boardId": 98,
+                  "cardId": 2451,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1044,
+                  "title": "LicitarDigital",
+                  "color": "DB1D18",
+                  "boardId": 98,
+                  "cardId": 2451,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1049,
+                  "title": "🏆Média",
+                  "color": "F1DB50",
+                  "boardId": 98,
+                  "cardId": 2451,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                },
+                {
+                  "id": 1058,
+                  "title": "🥈Licitação Prata",
+                  "color": "C0C0C0",
+                  "boardId": 98,
+                  "cardId": 2451,
+                  "lastModified": 0,
+                  "ETag": "cfcd208495d565ef66e7dff9f98764da"
+                }
+              ],
+              "assignedUsers": [
+                {
+                  "id": 3796,
+                  "participant": {
+                    "primaryKey": "leonardosavan",
+                    "uid": "leonardosavan",
+                    "displayname": "Leonardo Savan",
+                    "type": 0
+                  },
+                  "cardId": 2451,
+                  "type": 0
+                }
+              ],
+              "attachments": null,
+              "attachmentCount": null,
+              "owner": {
+                "primaryKey": "netofrederico",
+                "uid": "netofrederico",
+                "displayname": "Neto Frederico",
+                "type": 0
+              },
+              "order": 2,
+              "archived": false,
+              "done": null,
+              "duedate": "2026-02-19T12:00:00+00:00",
+              "notified": false,
+              "deletedAt": 0,
+              "commentsUnread": 0,
+              "commentsCount": 0,
+              "relatedStack": null,
+              "relatedBoard": null,
+              "ETag": "f8e8f1d84d44a98c589df0539878a60e"
+            }
+          ],
+          "order": 2,
+          "ETag": "f8e8f1d84d44a98c589df0539878a60e"
+        },
+        "357": {
+          "id": 357,
+          "title": "🗣️Pós Disputa",
+          "boardId": 98,
+          "deletedAt": 0,
+          "lastModified": 1770173333,
+          "order": 4,
+          "ETag": "6128866093c786f3aee21cf131e2df84"
+        },
+        "358": {
+          "id": 358,
+          "title": "📋 Enviar Docs Dispensa",
+          "boardId": 98,
+          "deletedAt": 0,
+          "lastModified": 1770121732,
+          "order": 0,
+          "ETag": "4ab2d3fc600041053494b6a8db6dc260"
+        }
+      },
+      "activeSessions": [],
+      "deletedAt": 0,
+      "lastModified": 1770174781,
+      "settings": [],
+      "ETag": "489d8db5808dbc484c8527db9b487443"
+    }
+  ]
+}
