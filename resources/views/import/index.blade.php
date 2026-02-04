@@ -193,7 +193,9 @@
 
                         if (!res.ok) {
                             if (res.status === 419) {
-                                throw new Error('Sessão expirada. Por favor, recarregue a página.');
+                                // Session expired: Reload immediately and stop processing
+                                window.location.reload();
+                                return; 
                             }
                              throw new Error(data.message || data.errors?.join(', ') || 'Erro desconhecido');
                         }
