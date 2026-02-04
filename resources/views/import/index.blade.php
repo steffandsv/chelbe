@@ -123,8 +123,25 @@
                 handleFiles(e.target.files);
             });
 
+            const MAX_SIZE = 50 * 1024 * 1024; // 50MB
+
             function handleFiles(newFiles) {
-                files = [...newFiles].filter(f => f.name.endsWith('.json'));
+                const validFiles = [];
+                [...newFiles].forEach(f => {
+                    if (!f.name.endsWith('.json')) return;
+                    
+                    if (f.size > MAX_SIZE) {
+                        results.innerHTML += `
+                            <div class="result-item result-error">
+                                ❌ ${f.name}: Arquivo muito grande (Max: 50MB).
+                            </div>
+                        `;
+                        return;
+                    }
+                    validFiles.push(f);
+                });
+
+                files = [...files, ...validFiles];
                 updateFilesList();
             }
 
@@ -133,7 +150,7 @@
                 <div class="file-item">
                     <span class="file-icon">📄</span>
                     <span class="file-name">${f.name}</span>
-                    <span class="file-size">${(f.size / 1024).toFixed(1)} KB</span>
+                    <span class="file-size">${(f.size / 1024 / 1024).toFixed(2)} MB</span>
                 </div>
             `).join('');
 
@@ -175,6 +192,9 @@
                         const data = await res.json();
 
                         if (!res.ok) {
+                            if (res.status === 419) {
+                                throw new Error('Sessão expirada. Por favor, recarregue a página.');
+                            }
                              throw new Error(data.message || data.errors?.join(', ') || 'Erro desconhecido');
                         }
 

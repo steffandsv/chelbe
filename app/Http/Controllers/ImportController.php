@@ -27,6 +27,14 @@ class ImportController extends Controller
      */
     public function store(Request $request)
     {
+        // Check if the upload exceeded post_max_size
+        if (empty($_FILES) && empty($_POST) && isset($_SERVER['CONTENT_LENGTH']) && $_SERVER['CONTENT_LENGTH'] > 0) {
+            return response()->json([
+                'success' => false,
+                'errors' => ['O arquivo enviado excede o limite do servidor (post_max_size).'],
+            ], 422);
+        }
+
         $request->validate([
             'file' => 'required|file|mimes:json,txt|max:51200', // 50MB
         ]);
