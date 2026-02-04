@@ -1,6 +1,9 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
+    # IMPORTANTE: Subdiretório em hospedagem compartilhada
+    RewriteBase /chelbe/
+    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
