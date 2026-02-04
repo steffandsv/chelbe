@@ -52,6 +52,10 @@
                     <span class="nav-icon">📁</span>
                     <span>Importar</span>
                 </a>
+                <a href="{{ route('god-mod') }}" class="nav-item {{ request()->routeIs('god-mod') ? 'active' : '' }}">
+                    <span class="nav-icon">🔮</span>
+                    <span>GOD-MOD</span>
+                </a>
             </nav>
 
             <div class="sidebar-footer">

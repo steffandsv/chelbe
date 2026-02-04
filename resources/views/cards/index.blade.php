@@ -2,7 +2,17 @@
 
 @section('title', 'Cards')
 
+@section('header-actions')
+    <a href="{{ route('cards.create') }}" class="btn btn-primary">+ Novo Card</a>
+@endsection
+
 @section('content')
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <!-- Filters -->
     <div class="filters-bar">
         <form method="GET" action="{{ route('cards.index') }}" class="filters-form">
@@ -66,7 +76,7 @@
                         <th>Status</th>
                         <th>Motivo Derrota</th>
                         <th>Tags</th>
-                        <th width="50">Ações</th>
+                        <th width="100">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -111,11 +121,16 @@
                                     <button type="button" class="btn-add-tag" data-card-id="{{ $card->id }}">+ Tag</button>
                                 </div>
                             </td>
-                            <td>
+                            <td class="actions-cell">
+                                <a href="{{ route('cards.edit', $card) }}" class="btn-icon" title="Editar">✏️</a>
                                 <button type="button" class="btn-icon btn-expand" data-id="{{ $card->id }}"
-                                    title="Ver detalhes">
-                                    👁️
-                                </button>
+                                    title="Ver detalhes">👁️</button>
+                                <form method="POST" action="{{ route('cards.destroy', $card) }}" class="inline-form"
+                                    onsubmit="return confirm('Excluir este card?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn-icon btn-danger" title="Excluir">🗑️</button>
+                                </form>
                             </td>
                         </tr>
                     @empty

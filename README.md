@@ -2,6 +2,10 @@
 
 Sistema profissional de análise de licitações Trello com banco de dados MySQL.
 
+## Instrucoes para o desenvolvedor:
+Este sistema foi criado para automaticamente dar deploy em uma hospedagem compartilhada php (necessariamente index.php na raíz) onde ela só possui capacidades de usar o composer (não consegue utilizar node, npm etc).
+Sempre que for criar algo leve em consideração essa arquitetura. Esse será automaticamente implementado em https://chelbe.mabus.com.br (ambiente controlado para dev)
+
 ## Stack
 
 - **Backend**: Laravel 12+ / PHP 8.2+
