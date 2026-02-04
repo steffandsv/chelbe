@@ -59,8 +59,16 @@ class DeckImporter
         DB::beginTransaction();
         
         try {
+            // Handle both array format and {"boards": [...]} format
+            $boards = $data['boards'] ?? $data;
+            
+            // If boards is not a list, wrap it
+            if (!isset($boards[0]) && !empty($boards)) {
+                $boards = [$boards];
+            }
+            
             // Process each board in the JSON
-            foreach ($data as $boardData) {
+            foreach ($boards as $boardData) {
                 $this->processBoard($boardData, $importType, $userStatus);
             }
             
@@ -330,12 +338,25 @@ class DeckImporter
         $newCards = 0;
         $boards = [];
         
-        foreach ($data as $boardData) {
+        // Handle both array format and {"boards": [...]} format
+        $boardsList = $data['boards'] ?? $data;
+        
+        // If boards is not a list, wrap it
+        if (!isset($boardsList[0]) && !empty($boardsList)) {
+            $boardsList = [$boardsList];
+        }
+        
+        foreach ($boardsList as $boardData) {
             $boardName = $boardData['title'] ?? 'Unknown';
             $boards[] = $boardName;
             
+            // Stacks can be an object (associative array) or array
             $stacks = $boardData['stacks'] ?? [];
             foreach ($stacks as $stackData) {
+                // Ensure stackData is an array (in case of object format)
+                if (!is_array($stackData)) {
+                    continue;
+                }
                 $cards = $stackData['cards'] ?? [];
                 foreach ($cards as $cardData) {
                     $deckCardId = $cardData['id'] ?? null;

@@ -10,27 +10,28 @@
                 <h3>Importar Dados do Deck</h3>
             </div>
             <div class="panel-body">
-                <!-- Import Type Selector -->
+                <!-- Import Type Selector (Switch Style) -->
                 <div class="import-type-selector">
-                    <label class="import-type-label">Tipo de Dados:</label>
-                    <div class="import-type-buttons">
-                        <button type="button" class="import-type-btn" data-type="tracking">
-                            <span class="type-icon">⚖️</span>
-                            <span class="type-name">Em Andamento</span>
-                            <span class="type-desc">Painel de Licitações</span>
-                        </button>
-                        <button type="button" class="import-type-btn" data-type="won">
-                            <span class="type-icon">🏆</span>
-                            <span class="type-name">Vitórias</span>
-                            <span class="type-desc">Processos Vencidos</span>
-                        </button>
-                        <button type="button" class="import-type-btn" data-type="lost">
-                            <span class="type-icon">❌</span>
-                            <span class="type-name">Derrotas</span>
-                            <span class="type-desc">Licitações Perdidas</span>
-                        </button>
+                    <span class="import-type-label">Tipo de Dados:</span>
+                    <div class="switch-group" id="importTypeSwitch">
+                        <input type="radio" name="import_type" id="type_tracking" value="tracking">
+                        <label for="type_tracking" class="switch-option">
+                            <span class="switch-icon">⚖️</span>
+                            <span class="switch-text">Em Andamento</span>
+                        </label>
+                        
+                        <input type="radio" name="import_type" id="type_won" value="won">
+                        <label for="type_won" class="switch-option">
+                            <span class="switch-icon">🏆</span>
+                            <span class="switch-text">Vitórias</span>
+                        </label>
+                        
+                        <input type="radio" name="import_type" id="type_lost" value="lost">
+                        <label for="type_lost" class="switch-option">
+                            <span class="switch-icon">❌</span>
+                            <span class="switch-text">Derrotas</span>
+                        </label>
                     </div>
-                    <input type="hidden" id="importType" value="">
                 </div>
 
                 <div class="upload-zone" id="uploadZone">
@@ -159,418 +160,416 @@
 @endsection
 
 @push('styles')
-    <style>
-        .import-type-selector {
-            margin-bottom: 1.5rem;
-        }
+<style>
+    .import-type-selector {
+        margin-bottom: 1.5rem;
+    }
 
-        .import-type-label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
-        }
+    .import-type-label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+    }
 
-        .import-type-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+    /* Switch Group - Radio Button Style */
+    .switch-group {
+        display: inline-flex;
+        background: var(--bg-secondary);
+        border-radius: 0.5rem;
+        padding: 4px;
+        gap: 4px;
+        border: 1px solid var(--border-color);
+    }
 
-        .import-type-btn {
-            flex: 1;
-            min-width: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-            border: 2px solid var(--border-color);
-            border-radius: 0.75rem;
-            background: var(--bg-secondary);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
+    .switch-group input[type="radio"] {
+        display: none;
+    }
 
-        .import-type-btn:hover {
-            border-color: var(--primary);
-            background: rgba(59, 130, 246, 0.1);
-        }
+    .switch-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1rem;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: var(--text-muted);
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
 
-        .import-type-btn.active {
-            border-color: var(--primary);
-            background: rgba(59, 130, 246, 0.15);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-        }
+    .switch-option:hover {
+        background: rgba(255, 255, 255, 0.05);
+        color: var(--text-primary);
+    }
 
-        .import-type-btn[data-type="won"].active {
-            border-color: var(--success);
-            background: rgba(16, 185, 129, 0.15);
-            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
-        }
+    .switch-group input[type="radio"]:checked + .switch-option {
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 
-        .import-type-btn[data-type="lost"].active {
-            border-color: var(--danger);
-            background: rgba(239, 68, 68, 0.15);
-            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
-        }
+    #type_won:checked + .switch-option {
+        background: var(--success);
+    }
 
-        .type-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
+    #type_lost:checked + .switch-option {
+        background: var(--danger);
+    }
 
-        .type-name {
-            font-weight: 600;
-            color: var(--text-primary);
-        }
+    .switch-icon {
+        font-size: 1rem;
+    }
 
-        .type-desc {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-top: 0.25rem;
-        }
+    .switch-text {
+        white-space: nowrap;
+    }
 
-        .file-info {
-            background: var(--bg-secondary);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
+    .file-info {
+        background: var(--bg-secondary);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
 
-        .file-details {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
+    .file-details {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
 
-        .file-name {
-            flex: 1;
-            font-weight: 500;
-        }
+    .file-name {
+        flex: 1;
+        font-weight: 500;
+    }
 
-        .file-size {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-        }
+    .file-size {
+        color: var(--text-muted);
+        font-size: 0.875rem;
+    }
 
-        .btn-remove {
-            background: none;
-            border: none;
-            color: var(--danger);
-            cursor: pointer;
-            font-size: 1.25rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-        }
+    .btn-remove {
+        background: none;
+        border: none;
+        color: var(--danger);
+        cursor: pointer;
+        font-size: 1.25rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+    }
 
-        .btn-remove:hover {
-            background: rgba(239, 68, 68, 0.1);
-        }
+    .btn-remove:hover {
+        background: rgba(239, 68, 68, 0.1);
+    }
 
-        .preview-section {
-            background: var(--bg-secondary);
-            border-radius: 0.75rem;
-            padding: 1.25rem;
-            margin: 1rem 0;
-        }
+    .preview-section {
+        background: var(--bg-secondary);
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        margin: 1rem 0;
+    }
 
-        .preview-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
+    .preview-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
 
-        .preview-stats {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-        }
+    .preview-stats {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
 
-        .preview-stat {
-            text-align: center;
-        }
+    .preview-stat {
+        text-align: center;
+    }
 
-        .preview-stat .stat-value {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
+    .preview-stat .stat-value {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+    }
 
-        .preview-stat .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
+    .preview-stat .stat-label {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
 
-        .preview-stat.stat-new .stat-value {
-            color: var(--success);
-        }
+    .preview-stat.stat-new .stat-value {
+        color: var(--success);
+    }
 
-        .preview-stat.stat-update .stat-value {
-            color: var(--warning);
-        }
+    .preview-stat.stat-update .stat-value {
+        color: var(--warning);
+    }
 
-        .preview-boards {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
+    .preview-boards {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+    }
 
-        .info-note {
-            background: rgba(59, 130, 246, 0.1);
-            border-left: 3px solid var(--primary);
-            padding: 0.75rem 1rem;
-            margin-top: 1rem;
-            border-radius: 0 0.5rem 0.5rem 0;
-            font-size: 0.875rem;
-        }
+    .info-note {
+        background: rgba(59, 130, 246, 0.1);
+        border-left: 3px solid var(--primary);
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        font-size: 0.875rem;
+    }
 
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
 
-        .badge-success {
-            background: rgba(16, 185, 129, 0.2);
-            color: var(--success);
-        }
+    .badge-success {
+        background: rgba(16, 185, 129, 0.2);
+        color: var(--success);
+    }
 
-        .badge-danger {
-            background: rgba(239, 68, 68, 0.2);
-            color: var(--danger);
-        }
+    .badge-danger {
+        background: rgba(239, 68, 68, 0.2);
+        color: var(--danger);
+    }
 
-        .badge-info {
-            background: rgba(59, 130, 246, 0.2);
-            color: var(--primary);
-        }
-    </style>
+    .badge-info {
+        background: rgba(59, 130, 246, 0.2);
+        color: var(--primary);
+    }
+
+    /* Hide upload zone when file is selected */
+    .upload-zone.hidden {
+        display: none;
+    }
+</style>
 @endpush
 
 @push('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const zone = document.getElementById('uploadZone');
-            const input = document.getElementById('fileInput');
-            const fileInfo = document.getElementById('fileInfo');
-            const fileName = document.getElementById('fileName');
-            const fileSize = document.getElementById('fileSize');
-            const removeBtn = document.getElementById('removeFile');
-            const btn = document.getElementById('importBtn');
-            const progress = document.getElementById('importProgress');
-            const progressFill = document.getElementById('progressFill');
-            const progressText = document.getElementById('progressText');
-            const results = document.getElementById('importResults');
-            const importTypeInput = document.getElementById('importType');
-            const previewSection = document.getElementById('previewSection');
-            const typeButtons = document.querySelectorAll('.import-type-btn');
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const zone = document.getElementById('uploadZone');
+    const input = document.getElementById('fileInput');
+    const fileInfo = document.getElementById('fileInfo');
+    const fileNameEl = document.getElementById('fileName');
+    const fileSizeEl = document.getElementById('fileSize');
+    const removeBtn = document.getElementById('removeFile');
+    const importBtn = document.getElementById('importBtn');
+    const progress = document.getElementById('importProgress');
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const results = document.getElementById('importResults');
+    const previewSection = document.getElementById('previewSection');
+    const typeRadios = document.querySelectorAll('input[name="import_type"]');
 
-            let currentFile = null;
-            let selectedType = null;
+    let currentFile = null;
+    let selectedType = null;
 
-            // Type selection
-            typeButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    typeButtons.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    selectedType = btn.dataset.type;
-                    importTypeInput.value = selectedType;
-                    updateImportButton();
-                });
-            });
-
-            // Drag events
-            zone.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                zone.classList.add('dragover');
-            });
-
-            zone.addEventListener('dragleave', () => {
-                zone.classList.remove('dragover');
-            });
-
-            zone.addEventListener('drop', (e) => {
-                e.preventDefault();
-                zone.classList.remove('dragover');
-                if (e.dataTransfer.files.length > 0) {
-                    handleFile(e.dataTransfer.files[0]);
-                }
-            });
-
-            zone.addEventListener('click', () => input.click());
-
-            input.addEventListener('change', (e) => {
-                if (e.target.files.length > 0) {
-                    handleFile(e.target.files[0]);
-                }
-            });
-
-            removeBtn.addEventListener('click', () => {
-                clearFile();
-            });
-
-            const MAX_SIZE = 50 * 1024 * 1024; // 50MB
-
-            function handleFile(file) {
-                if (!file.name.endsWith('.json')) {
-                    showError('Apenas arquivos JSON são aceitos.');
-                    return;
-                }
-
-                if (file.size > MAX_SIZE) {
-                    showError('Arquivo muito grande (máximo: 50MB).');
-                    return;
-                }
-
-                currentFile = file;
-                fileName.textContent = file.name;
-                fileSize.textContent = `${(file.size / 1024 / 1024).toFixed(2)} MB`;
-
-                zone.classList.add('hidden');
-                fileInfo.classList.remove('hidden');
-
-                // Get preview
-                getPreview(file);
-                updateImportButton();
-            }
-
-            function clearFile() {
-                currentFile = null;
-                input.value = '';
-                zone.classList.remove('hidden');
-                fileInfo.classList.add('hidden');
-                previewSection.classList.add('hidden');
-                updateImportButton();
-            }
-
-            function updateImportButton() {
-                const canImport = currentFile && selectedType;
-                btn.classList.toggle('hidden', !canImport);
-                btn.disabled = !canImport;
-            }
-
-            function showError(message) {
-                results.innerHTML = `
-                        <div class="result-item result-error">
-                            ❌ ${message}
-                        </div>
-                    `;
-            }
-
-            async function getPreview(file) {
-                try {
-                    const formData = new FormData();
-                    formData.append('file', file);
-
-                    const res = await fetch('{{ route("import.preview") }}', {
-                        method: 'POST',
-                        headers: {
-                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
-                            'Accept': 'application/json'
-                        },
-                        body: formData
-                    });
-
-                    const data = await res.json();
-
-                    if (data.success) {
-                        document.getElementById('previewTotal').textContent = data.preview.total_cards;
-                        document.getElementById('previewNew').textContent = data.preview.new_cards;
-                        document.getElementById('previewExisting').textContent = data.preview.existing_cards;
-
-                        const boardsHtml = data.preview.boards.length > 0
-                            ? `Boards: ${data.preview.boards.join(', ')}`
-                            : '';
-                        document.getElementById('previewBoards').textContent = boardsHtml;
-
-                        previewSection.classList.remove('hidden');
-                    }
-                } catch (err) {
-                    console.error('Preview failed:', err);
-                }
-            }
-
-            btn.addEventListener('click', async () => {
-                if (!currentFile || !selectedType) return;
-
-                btn.classList.add('hidden');
-                progress.classList.remove('hidden');
-                results.innerHTML = '';
-                progressFill.style.width = '0%';
-                progressText.textContent = 'Importando...';
-
-                try {
-                    const formData = new FormData();
-                    formData.append('file', currentFile);
-                    formData.append('import_type', selectedType);
-
-                    progressFill.style.width = '30%';
-
-                    const res = await fetch('{{ route("import.store") }}', {
-                        method: 'POST',
-                        headers: {
-                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
-                            'Accept': 'application/json'
-                        },
-                        body: formData
-                    });
-
-                    progressFill.style.width = '70%';
-
-                    const contentType = res.headers.get("content-type");
-                    if (!contentType || !contentType.includes("application/json")) {
-                        throw new Error("Resposta inválida do servidor (não é JSON)");
-                    }
-
-                    const data = await res.json();
-
-                    if (!res.ok) {
-                        if (res.status === 419) {
-                            window.location.reload();
-                            return;
-                        }
-                        throw new Error(data.errors?.join(', ') || 'Erro desconhecido');
-                    }
-
-                    progressFill.style.width = '100%';
-
-                    if (data.success) {
-                        results.innerHTML = `
-                                <div class="result-item result-success">
-                                    ✅ <strong>${data.board_name}</strong>: 
-                                    ${data.cards_created} criados, 
-                                    ${data.cards_updated} atualizados, 
-                                    ${data.cards_skipped} ignorados
-                                </div>
-                            `;
-
-                        // Refresh page after 2 seconds to show updated history
-                        setTimeout(() => {
-                            window.location.reload();
-                        }, 2000);
-                    } else {
-                        throw new Error(data.errors?.join(', ') || 'Erro desconhecido');
-                    }
-                } catch (err) {
-                    results.innerHTML = `
-                            <div class="result-item result-error">
-                                ❌ ${err.message}
-                            </div>
-                        `;
-                    btn.classList.remove('hidden');
-                }
-
-                progressText.textContent = 'Concluído!';
-
-                setTimeout(() => {
-                    progress.classList.add('hidden');
-                }, 2000);
-            });
+    // Type selection via radio buttons
+    typeRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            selectedType = this.value;
+            updateImportButton();
         });
-    </script>
+    });
+
+    // Drag events
+    zone.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        zone.classList.add('dragover');
+    });
+
+    zone.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        zone.classList.remove('dragover');
+    });
+
+    zone.addEventListener('drop', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        zone.classList.remove('dragover');
+        if (e.dataTransfer.files.length > 0) {
+            handleFile(e.dataTransfer.files[0]);
+        }
+    });
+
+    // Click to upload - only on zone, not input
+    zone.addEventListener('click', function(e) {
+        if (e.target !== input) {
+            input.click();
+        }
+    });
+
+    input.addEventListener('change', function(e) {
+        if (e.target.files.length > 0) {
+            handleFile(e.target.files[0]);
+        }
+    });
+
+    removeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        clearFile();
+    });
+
+    const MAX_SIZE = 50 * 1024 * 1024; // 50MB
+
+    function handleFile(file) {
+        if (!file.name.endsWith('.json')) {
+            showError('Apenas arquivos JSON são aceitos.');
+            return;
+        }
+
+        if (file.size > MAX_SIZE) {
+            showError('Arquivo muito grande (máximo: 50MB).');
+            return;
+        }
+
+        currentFile = file;
+        fileNameEl.textContent = file.name;
+        fileSizeEl.textContent = (file.size / 1024 / 1024).toFixed(2) + ' MB';
+
+        zone.classList.add('hidden');
+        fileInfo.classList.remove('hidden');
+
+        // Get preview
+        getPreview(file);
+        updateImportButton();
+    }
+
+    function clearFile() {
+        currentFile = null;
+        input.value = '';
+        zone.classList.remove('hidden');
+        fileInfo.classList.add('hidden');
+        previewSection.classList.add('hidden');
+        results.innerHTML = '';
+        updateImportButton();
+    }
+
+    function updateImportButton() {
+        const canImport = currentFile && selectedType;
+        importBtn.classList.toggle('hidden', !canImport);
+        importBtn.disabled = !canImport;
+    }
+
+    function showError(message) {
+        results.innerHTML = '<div class="result-item result-error">❌ ' + message + '</div>';
+    }
+
+    async function getPreview(file) {
+        try {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const res = await fetch('{{ route("import.preview") }}', {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    'Accept': 'application/json'
+                },
+                body: formData
+            });
+
+            const data = await res.json();
+
+            if (data.success && data.preview) {
+                document.getElementById('previewTotal').textContent = data.preview.total_cards || 0;
+                document.getElementById('previewNew').textContent = data.preview.new_cards || 0;
+                document.getElementById('previewExisting').textContent = data.preview.existing_cards || 0;
+
+                const boardsHtml = (data.preview.boards && data.preview.boards.length > 0)
+                    ? 'Boards: ' + data.preview.boards.join(', ')
+                    : '';
+                document.getElementById('previewBoards').textContent = boardsHtml;
+
+                previewSection.classList.remove('hidden');
+            }
+        } catch (err) {
+            console.error('Preview failed:', err);
+        }
+    }
+
+    importBtn.addEventListener('click', async function() {
+        if (!currentFile || !selectedType) return;
+
+        importBtn.classList.add('hidden');
+        progress.classList.remove('hidden');
+        results.innerHTML = '';
+        progressFill.style.width = '0%';
+        progressText.textContent = 'Importando...';
+
+        try {
+            const formData = new FormData();
+            formData.append('file', currentFile);
+            formData.append('import_type', selectedType);
+
+            progressFill.style.width = '30%';
+
+            const res = await fetch('{{ route("import.store") }}', {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    'Accept': 'application/json'
+                },
+                body: formData
+            });
+
+            progressFill.style.width = '70%';
+
+            const contentType = res.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+                throw new Error("Resposta inválida do servidor (não é JSON)");
+            }
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                if (res.status === 419) {
+                    window.location.reload();
+                    return;
+                }
+                throw new Error(data.errors?.join(', ') || 'Erro desconhecido');
+            }
+
+            progressFill.style.width = '100%';
+
+            if (data.success) {
+                results.innerHTML = '<div class="result-item result-success">' +
+                    '✅ <strong>' + data.board_name + '</strong>: ' +
+                    data.cards_created + ' criados, ' +
+                    data.cards_updated + ' atualizados, ' +
+                    data.cards_skipped + ' ignorados' +
+                    '</div>';
+
+                // Refresh page after 2 seconds to show updated history
+                setTimeout(function() {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                throw new Error(data.errors?.join(', ') || 'Erro desconhecido');
+            }
+        } catch (err) {
+            results.innerHTML = '<div class="result-item result-error">❌ ' + err.message + '</div>';
+            importBtn.classList.remove('hidden');
+        }
+
+        progressText.textContent = 'Concluído!';
+
+        setTimeout(function() {
+            progress.classList.add('hidden');
+        }, 2000);
+    });
+});
+</script>
 @endpush
