@@ -160,12 +160,23 @@
                         const res = await fetch('{{ route("import.store") }}', {
                             method: 'POST',
                             headers: {
-                                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+                                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                                'Accept': 'application/json'
                             },
                             body: formData
                         });
 
+                        // Check content type
+                        const contentType = res.headers.get("content-type");
+                        if (!contentType || !contentType.includes("application/json")) {
+                            throw new Error("Resposta inválida do servidor (não é JSON)");
+                        }
+
                         const data = await res.json();
+
+                        if (!res.ok) {
+                             throw new Error(data.message || data.errors?.join(', ') || 'Erro desconhecido');
+                        }
 
                         if (data.success) {
                             results.innerHTML += `
@@ -174,11 +185,8 @@
                             </div>
                         `;
                         } else {
-                            results.innerHTML += `
-                            <div class="result-item result-error">
-                                ❌ ${file.name}: ${data.errors?.join(', ') || 'Erro desconhecido'}
-                            </div>
-                        `;
+                            // Backup for success:false inside 200 OK (if API changes)
+                            throw new Error(data.errors?.join(', ') || 'Erro desconhecido');
                         }
                     } catch (err) {
                         results.innerHTML += `
