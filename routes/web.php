@@ -24,6 +24,7 @@ Route::get('/cards', [CardController::class , 'index'])->name('cards.index');
 // Import
 Route::get('/import', [ImportController::class , 'index'])->name('import.index');
 Route::post('/import', [ImportController::class , 'store'])->name('import.store');
+Route::post('/import/preview', [ImportController::class , 'preview'])->name('import.preview');
 
 /* |-------------------------------------------------------------------------- | API Routes (AJAX) |-------------------------------------------------------------------------- */
 
